@@ -35,7 +35,7 @@ export default function Footer() {
           <Flex sx={styles.copyright}>
             <Logo isWhite sx={styles.logo} />
             <Text as="span">
-              All right reserved - Design &amp; Developed by RedQ, Inc
+              All right reserved - Design &amp; Developed by Kwanza , Inc
             </Text>
           </Flex>
           <Flex as="ul" sx={styles.footerNav}>
