@@ -1,4 +1,9 @@
+# *
 User-agent: *
 Allow: /
+
+# Host
 Host: https://startuplanding.io
+
+# Sitemaps
 Sitemap: https://startuplanding.io/sitemap.xml

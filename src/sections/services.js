@@ -18,42 +18,48 @@ const data = {
       id: 1,
       icon: icon1,
       title: 'Donate Blood',
-      desc: `Get your info tests delivered at home collect a sample from the your task.`,
-      link: '#',
+      desc: `
+      High quality food is prepared in a central kitchen as per internationally recognised food safety standards..`,
+      link: '#blog',
     },
     {
       id: 2,
       icon: icon2,
       title: 'Pledge for cause',
-      desc: `Get your info tests delivered at home collect a sample from the your task.`,
+      desc: `
+      High quality food is prepared in a central kitchen as per internationally recognised food safety standards..`,
       link: '#',
     },
     {
       id: 3,
       icon: icon3,
       title: 'Life for a life',
-      desc: `Get your info tests delivered at home collect a sample from the your task.`,
+      desc: `
+      High quality food is prepared in a central kitchen as per internationally recognised food safety standards.`,
       link: '#',
     },
     {
       id: 4,
       icon: icon4,
       title: 'Volunteer with us',
-      desc: `Get your info tests delivered at home collect a sample from the your task.`,
+      desc: `
+      High quality food is prepared in a central kitchen as per internationally recognised food safety standards.`,
       link: '#',
     },
     {
       id: 5,
       icon: icon5,
       title: 'Partner with us',
-      desc: `Get your info tests delivered at home collect a sample from the your task.`,
+      desc: `
+      High quality food is prepared in a central kitchen as per internationally recognised food safety standards.`,
       link: '#',
     },
     {
       id: 6,
       icon: icon6,
       title: 'Help us for educational',
-      desc: `Get your info tests delivered at home collect a sample from the your task.`,
+      desc: `
+      High quality food is prepared in a central kitchen as per internationally recognised food safety standards.`,
       link: '#',
     },
   ],
@@ -90,8 +96,8 @@ const Services = () => {
     <Box as="section" id="services" sx={styles.section}>
       <Container>
         <SectionHeading
-          slogan="Service we work for"
-          title="What care we do for your family"
+          slogan="We Bring Change To The World"
+          title="Help Us Reach Our Goal"
         />
         <Grid sx={styles.serviceGrid}>
           {data.services.map((item) => (

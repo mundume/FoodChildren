@@ -10,8 +10,8 @@ const WorldMap = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="Those states we provide donation"
-          description="We are organizing a program on January 20, 2019 to help the homeless people. Our aim is to provide them a specific place to live."
+          title="We want Children to Tell a Beautiful African Story"
+          description="We are organizing a program on 2022 to help the homeless children find refuge. Our aim is to provide them a specific place to live."
         />
         <Box as="figure" sx={styles.illustration}>
           <Image width="847" height="418" src={worldMap} alt="worldMap" />

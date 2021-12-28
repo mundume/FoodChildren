@@ -54,7 +54,7 @@ const DonationForm = () => {
 
   return (
     <Box sx={styles.formWrapper}>
-      <Heading sx={styles.title}>Donate for the smile of orphans face</Heading>
+      <Heading sx={styles.title}>Donate for the smile of Children face face</Heading>
       <Box as="form" sx={styles.form} onSubmit={handleSubmit}>
         <Box sx={styles.radioGroup}>
           <Label>
@@ -110,7 +110,7 @@ const DonationForm = () => {
         </Box>
         <Box sx={styles.buttonGroup}>
           <Button variant="primary" sx={styles.submit}>
-            Donate Now
+            Donate With Mpesa
           </Button>
           <Text as="span">or</Text>
           <Button variant="muted" sx={styles.googlePay}>

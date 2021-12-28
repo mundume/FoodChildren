@@ -1,14 +1,14 @@
 /** @jsx jsx */
 import { jsx, Image } from 'theme-ui';
 import { Link } from 'components/link';
-import logo from 'assets/images/logo.svg';
-import logoWhite from 'assets/images/logo-white.svg';
+import logo from 'assets/images/loves.png';
+import logoWhite from 'assets/images/loves.png';
 
 export default function Logo({ isWhite, ...props }) {
   return (
     <Link path="/" sx={styles.logo} {...props}>
       <Image
-        width="187"
+        width="100"
         height="37"
         src={isWhite ? logoWhite : logo}
         alt="startup landing logo"
