@@ -1,52 +1,196 @@
 /** @jsx jsx */
-import { jsx, Box, Container } from 'theme-ui';
-import DonationForm from 'components/donation-form';
+import { useState } from 'react';
+import { IoIosCheckmarkCircle } from 'react-icons/io';
+import { jsx, Box, Container, Grid, Button, Heading, Text } from 'theme-ui';
+import Modal, { CloseButton } from 'components/modal/modal';
+import ResponsiveIframe from 'components/responsive-iframe';
 import Image from 'components/image';
-import illustration from 'assets/images/happychildren.jpg';
-import { borderRadius } from 'polished';
+import videoBanner from 'assets/images/video-banner.png';
+import play from 'assets/images/icons/play.png';
+import paint1 from 'assets/images/paint1.svg';
+import paint2 from 'assets/images/paint2.svg';
 
-const Banner = () => {
+const list = [
+  'Affordable Meals',
+  'Life insurance',
+  'Food Securuty',
+  'Help Graduates',
+];
+
+const VideoIntro = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
     <Box as="section" id="home" sx={styles.section}>
       <Container>
-        <Box sx={styles.contentWrapper}>
-          <DonationForm />
-          <Box as="figure" sx={styles.illustration}>
+        <Box sx={styles.grid}>
+          <Box sx={styles.videoWrapper}>
+            <Modal isOpen={isOpen}>
+              <CloseButton
+                onClick={() => setIsOpen(false)}
+                size="24px"
+                color="#fff"
+              />
+              <ResponsiveIframe
+                src="https://player.vimeo.com/video/394343710?autoplay=1&color=28DDB2&title=0&byline=0&portrait=0"
+                allow="autoplay; fullscreen"
+                allowFullScreen
+              />
+            </Modal>
+
             <Image
-              src={illustration}
-              width="836"
-              height="458"
-              alt="illustration"
+              src={videoBanner}
+              width="795"
+              height="557"
+              className="video-banner"
+              alt="video banner"
             />
+           
+          </Box>
+          <Box sx={styles.content}>
+          <Image
+              src={videoBanner}
+              width="795"
+              height="557"
+              className="video-banner"
+              alt="video banner"
+            />
+            <Heading sx={styles.title}>
+              We've funded{' '}
+              <span sx={{ background: `url(${paint1})` }}>$23,135</span> food
+              projects for{' '}
+              <span sx={{ background: `url(${paint2})` }}>5.3M</span> people
+              around the worldwide.
+              </Heading>
+            <Text as="p" sx={styles.summary}>
+              Get your tests delivered at let home collect sample from the
+              victory of the managements that supplies best design system
+              guidelines ever.
+            </Text>
+        
+
+            <Grid sx={styles.list} as="ul">
+              {list.map((item, i) => (
+                <Text as="li" key={i}>
+                  <IoIosCheckmarkCircle
+                    sx={{ color: 'primary', mr: 2 }}
+                    size="20px"
+                  />
+                  {item}
+                </Text>
+              ))}
+            </Grid>
           </Box>
         </Box>
+            
       </Container>
     </Box>
   );
 };
 
-export default Banner;
+export default VideoIntro;
 
 const styles = {
   section: {
-    // background: `linear-gradient(180deg, #F9FAFC 0%, rgba(249, 250, 252, 0) 100%)`,
-    position: 'relative',
-    zIndex: 0,
-    pt: [17, null, null, 19, 21, 23],
-    pb: [8, null, null, 10, null, null, 10],
-    minHeight: [null, null, null, null, null, '100vh'],
-    
+    pt: [20, null, null, 6, null, null, 13],
+    pb: [0, null, null, 8, null, null, 11],
   },
-  contentWrapper: {
-    gap: [12, null, null, 14, 12],
-    display: 'grid',
-    gridTemplateColumns: ['1fr', null, null, null, '385px 1fr', '470px 1fr'],
+  grid: {
+    display: ['flex', null, null, 'grid'],
+    flexDirection: ['column-reverse', null, null, 'unset'],
+    gap: '0 30px',
     alignItems: 'center',
-    
+    gridTemplateColumns: [
+      '1fr',
+      null,
+      null,
+      '1fr',
+      '1fr 1fr',
+      '600px 1fr',
+      '760px 1fr',
+    ],
   },
-  illustration: {
+  videoWrapper: {
+    textAlign: 'center',
+    position: 'relative',
     display: 'flex',
     alignItems: 'center',
-    
+    mt: [2, null, null, 0, 4, 0],
+    '.video-banner': {
+      maxWidth: ['100%', null, null, null, null, '100%'],
+    },
   },
-};
+  content: {
+    pt: [5, null, null, 6, null, null, 13],
+    px: [null, null, null, 8, 0],
+  },
+  playPause: {
+    color: 'white',
+    fontWeight: 700,
+    position: 'absolute',
+    padding: '0px',
+    bottom: [40, null, null, 70, 100],
+    left: '50%',
+    transform: 'translateX(-50%)',
+    ':focus': {
+      outline: 0,
+    },
+    img: {
+      mr: '16px',
+    },
+  },
+  title: {
+    color: 'heading',
+    fontWeight: 500,
+    fontSize: [5, null, null, 10, null, 11],
+    lineHeight: 1.53,
+    letterSpacing: ['-0.5px', null, null, '-1px'],
+    textAlign: ['center', null, null, 'left'],
+    span: {
+      backgroundSize: 'cover',
+      px: 2,
+    },
+  },
+  summary: {
+    color: 'textSecondary',
+    fontSize: [1, null, null, 2, '15px', 2],
+    lineHeight: [1.86, null, null, null, 1.86, 2.25],
+    mt: [4, null, null, 5, 3, 5],
+    maxWidth: 470,
+    textAlign: ['center', null, null, 'left'],
+  },
+  list: {
+    gap: '0 18px',
+    gridTemplateColumns: ['repeat(2, 142px)', null, null, 'repeat(2, 180px)'],
+    listStyle: 'none',
+    mt: [4, null, null, 5, 3, 5],
+    p: 0,
+    li: {
+      fontSize: [0, 1, null, 2, '15px', 2],
+      alignItems: 'center',
+      color: 'textSecondary',
+      display: 'flex',
+      lineHeight: [2.81, null, null, null, 2.2, 2.81],
+    },
+  },
+  
+    button: {
+      display: 'flex',
+      alignItems:'center',
+      minHeight: [45, null, null, 60, 50, 60],
+      width: '100',
+    },
+    buttonGroup: {
+      display:'flex',
+      textAlign:'center',
+      alignItems:'left',
+      mt: [5, null, null, 8],
+      span: {
+        display: 'flex',
+        justifyContent: 'center',
+        fontWeight: 'bold',
+        fontSize: 1,
+        lineHeight: 2.87,
+      }
+      },
+    };
+
