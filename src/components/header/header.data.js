@@ -15,7 +15,10 @@ export default [
     path: 'blog',
     label: 'Updates',
   },
-
+  {
+    path: 'Donate',
+    label: 'Donate',
+  },
   
 
 ];

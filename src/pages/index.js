@@ -10,6 +10,7 @@ import VideoIntro from 'sections/video-intro';
 import WorldMap from 'sections/world-map';
 import Milestone from 'sections/milestone';
 import Blog from 'sections/blog';
+import Donate from 'sections/Donate'
 
 export default function IndexPage() {
   return (
@@ -26,6 +27,7 @@ export default function IndexPage() {
         <Milestone />
         <Blog />
         <Subscribe />
+        <Donate/>
       </Layout>
     </ThemeProvider>
   );
