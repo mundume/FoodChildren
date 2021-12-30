@@ -17,7 +17,7 @@ const data = {
     {
       id: 1,
       icon: icon1,
-      title: 'Donate Blood',
+      title: 'QR scan 2 eat',
       desc: `
       High quality food is prepared in a central kitchen as per internationally recognised food safety standards..`,
       link: '#blog',
@@ -25,15 +25,15 @@ const data = {
     {
       id: 2,
       icon: icon2,
-      title: 'Pledge for cause',
+      title: 'Get Involved',
       desc: `
       High quality food is prepared in a central kitchen as per internationally recognised food safety standards..`,
-      link: '#',
+      link: '#donate',
     },
     {
       id: 3,
       icon: icon3,
-      title: 'Life for a life',
+      title: 'FAQ',
       desc: `
       High quality food is prepared in a central kitchen as per internationally recognised food safety standards.`,
       link: '#',
@@ -41,15 +41,15 @@ const data = {
     {
       id: 4,
       icon: icon4,
-      title: 'Volunteer with us',
+      title: 'The Issue',
       desc: `
       High quality food is prepared in a central kitchen as per internationally recognised food safety standards.`,
-      link: '#',
+      link: '#about',
     },
     {
       id: 5,
       icon: icon5,
-      title: 'Partner with us',
+      title: 'Partners',
       desc: `
       High quality food is prepared in a central kitchen as per internationally recognised food safety standards.`,
       link: '#',
@@ -57,7 +57,7 @@ const data = {
     {
       id: 6,
       icon: icon6,
-      title: 'Help us for educational',
+      title: 'Careers',
       desc: `
       High quality food is prepared in a central kitchen as per internationally recognised food safety standards.`,
       link: '#',

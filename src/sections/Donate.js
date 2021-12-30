@@ -53,7 +53,7 @@ import {
     };
   
     return (
-      <Box as="section" id ="Donate" sx={styles.formWrapper}>
+      <Box as="section" id ="donate" sx={styles.formWrapper}>
         <Heading sx={styles.title}>Donate for the smile of Children face face</Heading>
         <Box as= "form" sx={styles.form} onSubmit={handleSubmit}>
           <Box sx={styles.radioGroup}>
@@ -135,7 +135,7 @@ import {
       '::before, ::after': {
         background: `url(${dotPattern}) no-repeat right top`,
         content: [null, null, null, null, null, `''`],
-        position: 'absolute',
+        position: 'relative',
         width: 302,
         height: 347,
         zIndex: -1,

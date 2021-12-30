@@ -10,8 +10,10 @@ const WorldMap = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          title="We want Children to Tell a Beautiful African Story"
-          description="We are organizing a program on 2022 to help the homeless children find refuge. Our aim is to provide them a specific place to live."
+          title="Our Solution"
+          description=" Feed A Comrade Initiative (FACI) proposes to adress this problem by providing lunch on campus for needy and deserving srudents.
+          
+          It seeks to do this by raising funds to buy food and cooking on camous using mobile kitchens and trucks.<br/>It also supports food donations from well wishers, retailers and farmers."
         />
         <Box as="figure" sx={styles.illustration}>
           <Image width="847" height="418" src={worldMap} alt="worldMap" />

@@ -5,17 +5,12 @@ import { jsx, Box, Container, Grid, Button, Heading, Text } from 'theme-ui';
 import Modal, { CloseButton } from 'components/modal/modal';
 import ResponsiveIframe from 'components/responsive-iframe';
 import Image from 'components/image';
-import videoBanner from 'assets/images/video-banner.png';
+import campusLife from 'assets/images/photo3.jpg';
 import play from 'assets/images/icons/play.png';
 import paint1 from 'assets/images/paint1.svg';
 import paint2 from 'assets/images/paint2.svg';
 
-const list = [
-  'Medical and vision',
-  'Life insurance',
-  'HSAs and FSAs',
-  'Commuter benefits',
-];
+
 
 const VideoIntro = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,7 +33,7 @@ const VideoIntro = () => {
             </Modal>
 
             <Image
-              src={videoBanner}
+              src={campusLife}
               width="795"
               height="557"
               className="video-banner"
@@ -55,29 +50,26 @@ const VideoIntro = () => {
           </Box>
           <Box sx={styles.content}>
             <Heading sx={styles.title}>
-              We've funded{' '}
-              <span sx={{ background: `url(${paint1})` }}>$23,135</span> food
-              projects for{' '}
-              <span sx={{ background: `url(${paint2})` }}>5.3M</span> people
-              around the worldwide.
+              About Us
+              
             </Heading>
             <Text as="p" sx={styles.summary}>
-              Get your tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
+              Feed A Comrade Initiative (FACI) is a feeding programme for Kenyan University students.The initiative is being statred to adress a starvation problem in Kenyan Universities which often goes unnoticed and neglected.<br/>Many University students in Kenya come from humble background and barely afford two meals a day often just surviving on one meal.<br/> This programme has Started to adress their plight.
+
             </Text>
 
-            <Grid sx={styles.list} as="ul">
-              {list.map((item, i) => (
-                <Text as="li" key={i}>
-                  <IoIosCheckmarkCircle
-                    sx={{ color: 'primary', mr: 2 }}
-                    size="20px"
-                  />
-                  {item}
-                </Text>
-              ))}
-            </Grid>
+            <Box sx={styles.content}>
+            <Heading sx={styles.title}>
+              <br/>
+              Problem Statement
+              
+            </Heading>
+            <Text as="p" sx={styles.summary}>
+            University students especially in Nairobi, where the standards of living are unbearable high, face an ignored starvation problem.Most after using the little upkeep money given by parents and from HELB lfor rent and transport are left with hardly nothing to sustain them for the rest of the semester. Most of them only afford one meal which they opt for it to supper. Therefore, breakfast and lunch are foregone meaning they are always starving throughout the school day on campus. This definitely has an effect on their academic productivity and mainly on their mental health.
+             
+
+            </Text>
+            </Box>
           </Box>
         </Box>
       </Container>

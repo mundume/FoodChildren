@@ -5,7 +5,8 @@ import { jsx, Box, Container, Grid, Button, Heading, Text } from 'theme-ui';
 import Modal, { CloseButton } from 'components/modal/modal';
 import ResponsiveIframe from 'components/responsive-iframe';
 import Image from 'components/image';
-import videoBanner from 'assets/images/video-banner.png';
+import videoBanner from 'assets/images/photo1.jpg';
+import happyComrades from 'assets/images/photo2.jpg'
 import play from 'assets/images/icons/play.png';
 import paint1 from 'assets/images/paint1.svg';
 import paint2 from 'assets/images/paint2.svg';
@@ -38,7 +39,7 @@ const VideoIntro = () => {
             </Modal>
 
             <Image
-              src={videoBanner}
+              src={happyComrades}
               width="795"
               height="557"
               className="video-banner"
@@ -55,30 +56,15 @@ const VideoIntro = () => {
               alt="video banner"
             />
             <Heading sx={styles.title}>
-              We've funded{' '}
-              <span sx={{ background: `url(${paint1})` }}>$23,135</span> food
-              projects for{' '}
-              <span sx={{ background: `url(${paint2})` }}>5.3M</span> people
-              around the worldwide.
+             Lets Bring Hope To Our Future Generations Together!
+             <br/>
               </Heading>
-            <Text as="p" sx={styles.summary}>
-              Get your tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
+            <Text as="p" sx={styles.title}>
+              <br/>
+              Come Join Us Make Change<br/>
+              
             </Text>
         
-
-            <Grid sx={styles.list} as="ul">
-              {list.map((item, i) => (
-                <Text as="li" key={i}>
-                  <IoIosCheckmarkCircle
-                    sx={{ color: 'primary', mr: 2 }}
-                    size="20px"
-                  />
-                  {item}
-                </Text>
-              ))}
-            </Grid>
           </Box>
         </Box>
             

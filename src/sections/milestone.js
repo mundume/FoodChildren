@@ -12,11 +12,11 @@ const Milestone = () => {
         <Parallax sx={styles.parallax} bgImage={parallax} strength={200}>
           <Box sx={styles.card}>
             <Text as="p" sx={styles.cardTitle}>
-              Our first milestone
+              We Aim to Feed As Many Comrades As We Can
             </Text>
-            <Heading sx={styles.goal}>$13M</Heading>
+            <Heading sx={styles.goal}>$1000 collected</Heading>
             <Text as="p" sx={styles.collected}>
-              We collected 8M donation
+              We plan to collect More Funds This Year
             </Text>
             <Progress max={1} value={1 / 2} sx={styles.progress}>
               50%

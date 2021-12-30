@@ -3,15 +3,15 @@ import { jsx, Box, Container } from 'theme-ui';
 import Masonry from 'react-masonry-component';
 import SectionHeading from 'components/section-heading';
 import BlogPost from 'components/cards/blog-post';
-import thumb1 from 'assets/images/blog/1.png';
-import thumb2 from 'assets/images/blog/2.png';
-import thumb3 from 'assets/images/blog/3.png';
-import thumb4 from 'assets/images/blog/4.png';
+import thumb1 from 'assets/images/photo6.jpg';
+import thumb2 from 'assets/images/photo7.jpg';
+import thumb3 from 'assets/images/photo8.jpg';
+import thumb4 from 'assets/images/photo9.jpg';
 
 const data = [
   {
     id: 1,
-    slug: '#how-to',
+    slug: '#about',
     thumbnail: thumb1,
     showDescription: true,
     title: `Numbers Don’t Lie! School Feeding Programs Work.`,
